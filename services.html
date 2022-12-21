@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rassat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1cd5ca43b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Rassat</a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="services.html">servicios</a></li>
+                <li><a href="contact.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+       <div class="catalog">
+        <div class="leftSide">
+            <input type="search" name="buscar" id="searchBtn" placeholder="buscar">
+        </div>
+        <div class="cardTitle">Servicios</div>
+        <div class="rigthSide">
+            
+            <div class="cardService">
+                Servicio 1
+            </div>
+            <div class="cardService">
+                Servicio 2
+            </div>
+            <div class="cardService">
+                Servicio 3
+            </div>
+            <div class="cardService">
+                Servicio 4
+            </div>
+            <div class="cardService">
+                Servicio 5
+            </div>
+            <div class="cardService">
+                Servicio 6
+            </div>
+            <div class="cardService">
+                Servicio 7
+            </div>
+            <div class="cardService">
+                Servicio 8
+            </div>
+        </div>
+       </div>
+        
+       
+        <footer class="footer">
+            <h2>envianos tu consulta</h2>
+            <form action="#" class="contactForm">
+                <input type="text" class="input" placeholder="Nombre">
+                <input type="number"  class="input" placeholder="Telefono">
+                <input type="email" class="input" placeholder="E-Mail">
+                <textarea placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-caret-up"></i></button>
+    </div>
+   
+</body>
+<script src="scripts.js"></script>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</html>
